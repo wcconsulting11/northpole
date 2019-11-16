@@ -1,0 +1,36 @@
+<br />
+<div class="booyah-box col-10 offset-1">
+  <h1>Northpole Weather</h1>
+  
+  <script>
+  var data= fetch("http://api.weatherstack.com/current?access_key=a51c2e2248b38cf10551ae97504400d8&query=North Pole&units=f")
+  .then(resp=> resp.json())
+  .then((data)=>{
+    console.log(data);
+    
+    var time= document.getElementById("Localtime");
+    time.textContent= data.location.localtime;
+    
+    var temp= document.getElementById("Temperature");
+    temp.textContent= data.current.temperature;
+
+    var feelslike= document.getElementById("Feel");
+    feelslike.textContent= data.current.feelslike;
+
+    var description= document.getElementById("Description");
+    description.textContent= data.current.weather_descriptions[0];
+  })
+  
+  </script>
+
+  <p>
+  <h2>Baby it's cold outside!</h2>
+  </p>
+  <div>
+  <h4>Local Date & Time: <span id="Localtime"> </span></h4>
+  <h4>Temperature: <span id="Temperature"> </span>&#176;</h4>
+  <h4>Feels Like: <span id="Feel"> </span>&#176;</h4>
+  <h4>Sky: <span id="Description"> </span> &#10052;</h4>
+  </div>
+  <h2>Another snowman building day!!<span style='font-size:100px;'>&#9924;</span></h2>
+</div>

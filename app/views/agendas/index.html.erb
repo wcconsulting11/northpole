@@ -1,0 +1,9 @@
+<h1>Santa's Agenda</h1>
+<% @agendas.each do |agenda| %>
+  <div class="booyah-box col-10 offset-1">
+    <h1><%= agenda.place %></h1><br />
+    <i><%= agenda.location %></i><br />
+    <p><%= agenda.date %></p><br />
+  </div>
+
+<% end %>

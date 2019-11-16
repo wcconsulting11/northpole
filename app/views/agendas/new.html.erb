@@ -1,0 +1,10 @@
+<div class="booyah-box col-10 offset-1">
+  <h1>Update Santa's Agenda</h1>
+  <%= simple_form_for @agenda do |f| %>
+    <%= f.input :place %>
+    <%= f.input :location %>
+    <%= f.input :date %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+</div>
