@@ -6,7 +6,6 @@ Rails.application.routes.draw do
  
  get 'weather', to: 'static_pages#weather'
  get 'recipes', to: 'static_pages#recipes'
- get 'message', to: 'static_pages#message'
-
+ get 'facts', to: 'static_pages#facts'
  resources :static_pages#weather
 end

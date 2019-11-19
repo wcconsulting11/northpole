@@ -9,7 +9,7 @@ class StaticPagesController < ApplicationController
  def recipes
  end
 
- def message
+ def facts
  end
 
 end

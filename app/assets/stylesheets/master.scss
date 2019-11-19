@@ -1,5 +1,5 @@
 @import "bootstrap";
-
+@import "font-awesome";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -10,6 +10,10 @@
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
   margin-bottom: 15px;
+  padding: 15px;
+}
+.booyah-box .row
+{
   padding: 15px;
 }
   
@@ -56,3 +60,28 @@ body{
 #map {
   height: 300px;
 }
+
+
+.li{
+  float: clear;
+}
+
+.img-fluid{
+  width: 150px;
+  height: 150px;
+  float: right;
+} 
+
+
+.social-button {
+  margin: 4px;
+  width: 10px;
+  height: 10px;
+  font-size: 45px;
+  color: rgb(255, 255, 255) !important;
+}
+
+.social a:hover {
+  text-decoration: none;
+}
+
