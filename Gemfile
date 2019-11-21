@@ -67,7 +67,6 @@ gem 'simple_form'
 gem "font-awesome-rails"
 gem "geocoder"
 gem "figaro"
-gem 'sms-easy'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
